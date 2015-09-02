@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModule="My_RSS_Reader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zen of Python" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMI-5l-L45">
+                        <rect key="frame" x="5" y="8" width="328" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="hdI-F1-1BO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Python is so stylish!!" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLm-jh-9FS">
+                        <rect key="frame" x="5" y="26" width="328" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="tIM-66-EiJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015/09/03" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNw-8f-zzn">
+                        <rect key="frame" x="5" y="81" width="328" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="058-2h-qgv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XNw-8f-zzn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="3Ts-4V-PPI"/>
+                    <constraint firstAttribute="trailing" secondItem="hMI-5l-L45" secondAttribute="trailing" constant="5" id="6rD-w1-rd7"/>
+                    <constraint firstItem="hMI-5l-L45" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Mum-EH-YhR"/>
+                    <constraint firstItem="VLm-jh-9FS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Pj0-88-YCR"/>
+                    <constraint firstAttribute="trailing" secondItem="XNw-8f-zzn" secondAttribute="trailing" constant="5" id="UYq-XV-au2"/>
+                    <constraint firstItem="VLm-jh-9FS" firstAttribute="top" secondItem="hMI-5l-L45" secondAttribute="bottom" id="WTz-Nq-nYv"/>
+                    <constraint firstAttribute="bottom" secondItem="XNw-8f-zzn" secondAttribute="bottom" constant="6" id="btn-Bp-JxK"/>
+                    <constraint firstItem="hMI-5l-L45" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gU3-Ff-VcZ"/>
+                    <constraint firstAttribute="trailing" secondItem="VLm-jh-9FS" secondAttribute="trailing" constant="5" id="kOU-bd-HU8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="date" destination="XNw-8f-zzn" id="p3r-uc-GpB"/>
+                <outlet property="descript" destination="VLm-jh-9FS" id="bXt-rg-lPr"/>
+                <outlet property="title" destination="hMI-5l-L45" id="cOe-as-luO"/>
+            </connections>
+            <point key="canvasLocation" x="365" y="274.5"/>
+        </tableViewCell>
+    </objects>
+</document>
